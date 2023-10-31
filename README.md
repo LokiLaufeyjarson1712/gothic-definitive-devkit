@@ -1,10 +1,10 @@
-# GOTHIC Development Kit 1.3
+# GOTHIC Definitive Development Kit
   
   
     
 ## ENGLISH  
   
-PhoenixTales' update of the official GOTHIC Mod Development Kit, to be used for non-commercial modifications. Version 1.0 was released by Piranha Bytes in 2001. See our [Changelog](https://github.com/PhoenixTales/gothic-devkit/blob/main/Changelog.txt) for details.  
+Building on PhoenixTales' adaptation of the official GOTHIC Mod Development Kit, the Definitive Development Kit addresses lingering issues in the DevKit and the official ModKit. It's designed for non-commercial modifications. Version 1.0 was released by Piranha Bytes in 2001. See our [Changelog](https://github.com/PhoenixTales/gothic-definitive-devkit/blob/main/Changelog.txt) for details.  
 
 ### How to extract textures from your local installation of GOTHIC
 Meshes, scripts and some of the worlds were already included in decompiled form in the official `gothic_mod_developmentkit.zip` (v1.0).  
@@ -29,7 +29,7 @@ These files can serve as a base for making modifications to GOTHIC. They should 
   
 ## DEUTSCH  
   
-PhoenixTales' Update des offiziellen GOTHIC Mod Development Kits zur Nutzung im Rahmen von nicht-kommerziellen Modifikationen. Die erste Version (1.0) wurde 2001 von Piranha Bytes veröffentlicht. Die genauen Änderungen findet ihr im [Changelog](https://github.com/PhoenixTales/gothic-devkit/blob/main/Changelog.txt).  
+Aufbauend auf PhoenixTales' aktualisierter Version des offiziellen GOTHIC Mod Development Kits, behebt die Definitive Development Kit noch bestehende Probleme im DevKit und dem offiziellen ModKit. Die erste Version (1.0) wurde 2001 von Piranha Bytes veröffentlicht. Die genauen Änderungen findet ihr im [Changelog](https://github.com/PhoenixTales/gothic-definitive-devkit/blob/main/Changelog.txt).  
 
 ### Extrahieren der Texturen aus der lokalen GOTHIC Installation
 Meshes, Skripte und einige Welten wurden bereits in dekompilierter Form im offiziellen `gothic_mod_developmentkit.zip` (v1.0) integriert.  
