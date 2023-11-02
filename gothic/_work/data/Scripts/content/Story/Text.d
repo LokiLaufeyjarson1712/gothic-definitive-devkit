@@ -479,10 +479,10 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "die Winde klemmt"					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " Gegenstand gegeben"								;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " Gegenstände gegeben"							;
-const string _STR_MESSAGE_ORE_GIVEN			= " Erz gegeben"									;
 const string _STR_MESSAGE_ITEM_TAKEN		= " Gegenstand erhalten"							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " Gegenstände gegeben"							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " Gegenstände erhalten"							;
+const string _STR_MESSAGE_ORE_GIVEN			= " Erz gegeben"									;
 const string _STR_MESSAGE_ORE_TAKEN			= " Erz erhalten"									;
 
 // Bidschrimausgabe fürs Tausch-Fenster
@@ -616,4 +616,23 @@ const string MENU_TEXT_NEEDS_RESTART	= "Einige Einstellungen werden erst nach ei
 //
 const string STR_INFO_TRADE_ACCEPT						= "Annehmen"			;
 const string STR_INFO_TRADE_RESET						= "Ablehnen"			;
-const string STR_INFO_TRADE_EXIT						= "Zurück"				;	
+const string STR_INFO_TRADE_EXIT						= "Zurück"				;
+
+const string STR_BADENIXE = "Badenixe";
+
+// ****************
+// B_Kapitelwechsel
+// ****************
+
+const string KapWechsel_1			= "Kapitel 1"					;
+const string KapWechsel_1_Text		= "Die Welt der Verurteilten"	;
+const string KapWechsel_2			= "Kapitel 2"					;
+const string KapWechsel_2_Text		= "Das Nest der Minecrawler"	;
+const string KapWechsel_3			= "Kapitel 3"					;
+const string KapWechsel_3_Text		= "Artefakte von uralter Macht"	;
+const string KapWechsel_4			= "Kapitel 4"					;
+const string KapWechsel_4_Text		= "Xardas"						;
+const string KapWechsel_5			= "Kapitel 5"					;
+const string KapWechsel_5_Text		= "Die Hüter des Portals"		;
+const string KapWechsel_6			= "Kapitel 6"					;
+const string KapWechsel_6_Text		= "Die Hallen des Schläfers"	;

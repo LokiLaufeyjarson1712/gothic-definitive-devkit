@@ -358,7 +358,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Das waren drei. Verwende sie weise.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -371,7 +371,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Das waren drei. Verwende sie weise.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -384,7 +384,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Pyrokinese()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Das waren drei. Verwende sie weise.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -397,7 +397,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Das waren drei. Verwende sie weise.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };

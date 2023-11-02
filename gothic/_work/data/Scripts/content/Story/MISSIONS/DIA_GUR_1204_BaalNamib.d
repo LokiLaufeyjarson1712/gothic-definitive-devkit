@@ -57,21 +57,21 @@ FUNC VOID DIA_BaalNamib_NoTalk_Info()
 func void DIA_BaalNamib_NoTalk_Hi()
 {
 	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Hi_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Hi_02_01"); //
+	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Hi_02_01"); //(verärgertes Schnauben)
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Sleeper()
 {
 	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Der Schläfer sei mit dir!
-	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Sleeper_02_01"); //
+	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Sleeper_02_01"); //(verärgertes Schnauben)
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Imp()
 {
 	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Imp_15_00"); //Alles, klar, Alter?
-	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Imp_02_01"); //
+	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Imp_02_01"); //(verärgertes Schnauben)
 	BaalNamib_Sakrileg = TRUE;
 };
 
@@ -104,7 +104,7 @@ FUNC INT DIA_BaalNamib_FirstTalk_Condition()
 
 FUNC VOID DIA_BaalNamib_FirstTalk_Info()
 {	
-	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_00"); //
+	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_00"); //(seufzt)
 	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //Der Schläfer hat dich erwählt. Ist es dir wirklich ernst mit deinem Wunsch, uns beizutreten?
 
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
@@ -114,7 +114,7 @@ FUNC VOID DIA_BaalNamib_FirstTalk_Info()
 
 func void DIA_BaalNamib_FirstTalk_Mute()
 {
-	AI_Output (other, self,"DIA_BaalNamib_FirstTalk_Mute_15_00"); //
+	AI_Output (other, self,"DIA_BaalNamib_FirstTalk_Mute_15_00"); //(seufzt)
 	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_Mute_02_01"); //Nun?
 };
 

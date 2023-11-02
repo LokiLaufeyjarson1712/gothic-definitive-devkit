@@ -60,21 +60,21 @@ FUNC VOID DIA_BaalOrun_NoTalk_Info()
 func void DIA_BaalOrun_NoTalk_Hi()
 {
 	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Hi_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //(verärgertes Schnauben)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Sleeper()
 {
 	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //Der Schläfer sei mit dir!
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //(verärgertes Schnauben)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Imp()
 {
 	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Imp_15_00"); //Alles klar, Alter? 
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //(verärgertes Schnauben)
 	BaalOrun_Sakrileg = TRUE;
 };
 

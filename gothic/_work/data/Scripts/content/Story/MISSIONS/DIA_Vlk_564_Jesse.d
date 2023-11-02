@@ -121,7 +121,7 @@ FUNC VOID DIA_Jesse_Mission_Info()
 func void DIA_Jesse_Mission_ForgetIt()
 {
 	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //Ich schulde dir GAR nichts!
-	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); //
+	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); //(sauer) Dann vergiss es doch einfach!
 	Npc_SetPermAttitude(self,ATT_ANGRY);
 	Info_ClearChoices	(DIA_Jesse_Mission );
 	AI_StopProcessInfos	(self);

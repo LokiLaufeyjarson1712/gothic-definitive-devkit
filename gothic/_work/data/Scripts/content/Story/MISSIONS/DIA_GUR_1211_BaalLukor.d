@@ -301,8 +301,11 @@ FUNC VOID Info_BaalLukor_SECONDWAIT_Info()
 
 	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Hmmm ... Dieser Stollen ist eine Sackgasse! Vielleicht findest du hier irgendwelche Hinweise, die uns weiterhelfen.
 
-	AI_StopProcessInfos	(self);
-	Npc_ExchangeRoutine	(self, "WaitInSideTunnelTwo");
+	if (!Npc_HasItems	(hero, OrkParchmentTwo)	) 
+	{	
+		AI_StopProcessInfos	(self);
+		Npc_ExchangeRoutine	(self, "WaitInSideTunnelTwo");
+	};
 };
 
 //**************************************************************************
@@ -314,7 +317,7 @@ INSTANCE Info_BaalLukor_SECONDSCROLL (C_INFO)
 	condition	= Info_BaalLukor_SECONDSCROLL_Condition;
 	information	= Info_BaalLukor_SECONDSCROLL_Info;
 	permanent	= 0;
-	important 	= 1;
+	description = "Hier ist ein zerrissenes Stück Pergament!";
 };
 
 FUNC INT Info_BaalLukor_SECONDSCROLL_Condition()
@@ -418,9 +421,7 @@ FUNC VOID Info_BaalLukor_RUNES_Info()
 
 	Npc_RemoveInvItems	(self,			OrkParchmentOne, 1); //Pergament 1 entfernen
 	Npc_RemoveInvItems	(self,			OrkParchmentTwo, 1); //Pergament 2 entfernen
-
-	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
-	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport übergeben
+	//Hier Teleport-Übergabe entfernt --> erst wenn vor wand!
 
 	B_LogEntry			(CH3_OrcGraveyard,	"Mit Hilfe orkischer Wandinschriften in einer der Hallen konnte Baal Lukor die Spruchrolle übersetzen. Es handelt sich um einen Teleportationszauber, der wohl nur über sehr kurze Distanz wirkt."); 
 
@@ -564,6 +565,9 @@ FUNC VOID Info_BaalLukor_DOOR_Info()
 	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //Hinter dieser Wand ... Das muss es sein!
 	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //Meine magische Kraft ist noch immer geschwächt.
 	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //Benutze den orkischen Teleportzauber hier vor dieser Wand.
+	
+	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
+	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport übergeben
 	
 	AI_StopProcessInfos	(self);
 };

@@ -2167,7 +2167,7 @@ INSTANCE SVM_16	(C_SVM)				// Stimmbeschreibung	:		Babes halt!!!!!
 INSTANCE SVM_17	(C_SVM)							//Ork-Stimme (alle SVMs werden auf wenige guturalen, unverständlichen Laute umgeleitet)
 												//Die Dialoge mit dem verbannten Ork-Shamanen im Kastell und dem Ork-Sklaven in der Freien Mine laufen auch
 												//über Stimme 17, sind aber in halbwegsverständlichem orkisch-deutsch
-												//Das hier überall vergebene "SVM_17_OrcSound01" wird noch durch 9 weitere Variationen ergänzt
+												//Das hier überall vergebene SVM_17_OrcSound01 wird noch durch 9 weitere Variationen ergänzt
 
 // FIXME: mehr Varianten!?
 {

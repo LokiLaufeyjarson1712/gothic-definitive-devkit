@@ -79,7 +79,7 @@ FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Wir tun alles, was uns die Gurus sagen. Es ist unsere Pflicht, ihnen zu dienen.
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_15_02"); //Wer sind eure Gurus?
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Wer sind eure Gurus?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Y'Berion der Erleuchtete ist der Oberste Guru. Unter ihm folgen Cor Kalom und Cor Angar und noch einige weitere.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -114,7 +114,7 @@ FUNC VOID Info_Tpl_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
 	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Als Neuling darfst du dich fast überall aufhalten. Aber es ist Ungläubigen untersagt, den Tempel des Schläfers zu betreten.
-	AI_Output(other,self,"Info_Tpl_8_DasLager_08_02"); //Also halt dich nur da auf, wo es dir gestattet ist. Und störe nicht unsere Meister bei der Meditation.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Also halt dich nur da auf, wo es dir gestattet ist. Und störe nicht unsere Meister bei der Meditation.
 };
 
 // *************************************************************************

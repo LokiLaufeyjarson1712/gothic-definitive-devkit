@@ -14,8 +14,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PrintDebugNpc	(PD_MISSION, "---=== DAS ERSTES KAPITEL ===---");
 		B_Give_SkipChapter2Weapons ();
 		
-		introducechapter ("Kapitel 1","Die Welt der Verurteilten","chapter1.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 1","Welcome to the colony","chapter1.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_1,KAPWECHSEL_1_TEXT,"chapter1.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -41,10 +40,9 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		B_Story_RespawnOW();
 		
 		//-------- InExtremo vorbereiten --------
-		B_InsertInExtremo();
+		//B_InsertInExtremo();
 		
-		introducechapter ("Kapitel 2","Das Nest der Minecrawler","chapter2.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 2","The Minecrawler's nest","chapter2.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_2,KAPWECHSEL_2_TEXT,"chapter2.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -55,8 +53,11 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PrintDebugNpc	(PD_MISSION, "---=== DAS DRITTE KAPITEL ===---");
 
 		//-------- InExtremo wegräumen --------
-		B_InExtremoStopMusic();	
-		B_KillInExtremo();
+		if(InExtremoOnStage == TRUE)
+		{
+			//B_InExtremoStopMusic();	
+			//B_KillInExtremo();
+		};
 
 		//-------- Kapitel 2 Missionen nochmal auf Success setzen --------	
 		YBerion_BringFocus 		= LOG_SUCCESS;
@@ -104,8 +105,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		var C_NPC Novize_1;		Novize_1	 	 = Hlp_GetNpc	(NOV_1319_Novize);
 		Novize_1.senses =		hero.senses;
 		
-		introducechapter ("Kapitel 3","Artefakte von uralter Macht","chapter3.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 3","Artifacts of ancient power","chapter3.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_3,KAPWECHSEL_3_TEXT,"chapter3.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -142,7 +142,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		//-------- Tagebucheinträge --------
 		Log_CreateTopic		(CH4_Firemages,	LOG_MISSION);
 		Log_SetTopicStatus	(CH4_Firemages,	LOG_RUNNING);
-		B_LogEntry			(CH4_Firemages,"Saturas, the leader of the Magicians of Water, has demanded a last favor of me. To blow up the ore mound he requires the aid of the Magicians of Fire in the Old Camp. I don't know how I can persuade Gomez' magicians to take part in a plan which will destroy the foundation of their powers, but I'll think of something.");
+		B_LogEntry			(CH4_Firemages,"Saturas, Anführer der Wassermagier, hat einen letzten Gefallen von mir gefordert. Er benötigt für die Sprengung des Erzhaufens die Hilfe der Feuermagier aus dem Alten Lager. Ich weiß noch nicht, wie ich Gomez' Magier überreden soll, an einem Plan mitzuwirken, der das Ende ihrer Machtgrundlage bedeuten würde, aber mir wird schon was einfallen.");
 
 		//-------- Szene am Damm --------
 		B_ExchangeRoutine	(SLD_700_LEE,"DAMNPAST"); 
@@ -212,8 +212,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		
 		//--------------- Kapitel 4 wird angezeigt -------------------------------
 		
-		introducechapter ("Kapitel 4","Xardas","chapter4.tga","levelup.wav", 6000); 
-		//introducechapter ("Chapter 4","Xardas","chapter4.tga","levelup.wav", 6000); 
+		IntroduceChapter (KAPWECHSEL_4,KAPWECHSEL_4_TEXT,"chapter4.tga","levelup.wav", 6000); 
 	}
 	
 	//***************************************************************************
@@ -247,8 +246,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		//-------- Oberwelt-Monster nochmal "nachfüllen" --------	
 		B_Story_RespawnOW();
 		
-		introducechapter ("Kapitel 5","Die Hüter des Portals","chapter5.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 5","The custodians of the portal","chapter5.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_5,KAPWECHSEL_5_TEXT,"chapter5.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -265,8 +263,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PlayVideo		("OREHEAP.BIK");	// Schwert aufladen
 		CreateInvItem 	(hero, Mythrilklinge02);	
 		
-		introducechapter ("Kapitel 6","Die Hallen des Schläfers","chapter6.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 6","The sleeper's halls","chapter6.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_6,KAPWECHSEL_6_TEXT,"chapter6.tga","levelup.wav", 6000);
 	};
 };
 

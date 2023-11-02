@@ -358,7 +358,7 @@ FUNC void  Info_OrcShaman_MAP_Info()
 	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //Kannst du mir sagen, wo auf meiner Karte hier die Orkstadt ist?
 	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_02"); //Heimat von Ur-Shak seien, wo Karte nicht bemalt.
 	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_03"); //Fremder geben Karte, dann Ur-Shak machen Karte fertig!
-	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_04"); //
+	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_04"); //(kritzelt herum)
 	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_05"); //Erstaunlich, du bist ein guter Kartenzeichner. Danke!
 
 	B_GiveInvItems  (hero, self, ItWrWorldmap, 1);

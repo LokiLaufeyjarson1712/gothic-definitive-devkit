@@ -62,21 +62,21 @@ FUNC VOID DIA_BaalCadar_NoTalk_Info()
 func void DIA_BaalCadar_NoTalk_Hi()
 {
 	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
+	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //(verärgertes Schnauben)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Sleeper()
 {
 	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //Der Schläfer sei mit dir!
-	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //
+	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //(verärgertes Schnauben)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Imp()
 {
 	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //Alles klar, Alter? 
-	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //
+	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //(verärgertes Schnauben)
 	BaalCadar_Sakrileg = TRUE;
 };
 
